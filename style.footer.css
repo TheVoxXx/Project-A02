@@ -1,0 +1,96 @@
+@import url('https://fonts.google.com/specimen/Inter#standard-styles');
+body{
+	padding: 0;
+	margin: 0;
+
+}
+footer{
+	padding-top: 60px;
+	background-size: cover;
+	background-color: #6C63FF;
+	height: 360px;
+	
+   
+
+}
+h1{
+	text-align: center;
+	padding: 20px;
+}
+.col-md-3 h2{
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 24px;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.col-md-3 a,i{
+	color: #fff;
+	font-family: 'Roboto';
+	text-align: center;
+}
+.col-md-12 p{
+	color: #fff;
+	text-align: center;
+	
+	
+}
+hr{
+	    border-top: 1px solid rgba(255, 98, 98, 0.1);
+	width: 100%;
+}
+.col-md-3 ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	padding-bottom: 30px;
+}
+.col-md-3 li{
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+}
+.col-md-3 a{
+	padding: 5px;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+a:hover{
+	text-decoration: none;
+	color: brown;
+}
+
+.col-md-3 .fa{
+	
+	padding-top: 10px;
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	text-align: center;
+	display: inline-block;
+	margin: 0 auto;
+}
+.download-icon .fa{
+	font-size: 50px;
+	padding: 10px;
+}
+.col-md-3 .social .fa{
+	padding-top: 30px;
+	font-size: 30px;
+	transition: .9s;
+}
+.col-md-3 .social .fa:hover{
+	transition: 1s;
+	transform: scale(1.1);
+	color: #ddd;
+}
+@media(max-width: 768px){
+	footer{
+		height: auto !important;
+	}
+	h2{
+		font-size: 30px;
+	}
+}

@@ -1,0 +1,220 @@
+@media  (max-width: 1200px) {
+    * {font-size:92.5%}
+
+    .feature-card p {
+        text-align:left;
+        line-height: 2rem;
+        padding-left: .5rem;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    * {font-size:87.5;}
+    
+
+    .feature-wrapper {
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+    .feature-card {
+        width:100%;
+    }
+
+    .f2 {
+        margin: 3rem 0;
+    }
+    .slot{
+        z-index: -1;
+    }
+}
+
+@media (max-width:670px) {
+    .feature-image img {
+        max-width: 18rem 
+    }
+
+    .feature-card p {
+        text-align:center;
+        line-height: 2rem;
+        padding-left: .5rem;
+    }
+}
+
+/* navbar code */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+}
+.main-bar{
+    top:0;
+    background-color: #22272b;
+    display: flow-root;
+    padding: 0 10%;
+}
+#check {
+    display:none;
+}
+.logo-header {
+    display: table;
+    float:left;
+    vertical-align: middle;
+    padding: 0;
+    color:#6C63FF;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left:0;
+    margin-right: 0;
+    width: 100px;
+    height: 65px;
+    position: relative;
+    z-index: 9;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.logo-header:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    right: -50px;
+    width: 80%;
+    transform: skew(30deg);
+    background-color: #6C63FF; 
+}
+.logo-header:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    right: 10%;
+    width: 2000px;
+    background-color: #6C63FF;
+}
+.logo-header a {
+    color: #22272b;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 70px;
+    text-decoration: none;
+}
+.main-bar ul{
+    float: right;
+}
+.main-bar nav ul li {
+        display: inline-block;
+        line-height: 70px;
+        border-radius: 14px;
+}
+.main-bar nav li.active a {
+    color:#020101;
+    background-color: #6C63FF;
+    border-radius:14px;
+}
+.main-bar nav  li a {
+    padding: 15px 25px;
+    border: 0;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 1;
+    text-decoration: none;
+    transition: all 0.5s;
+    border-radius: 14px;
+}
+.main-bar nav li:hover{
+    color:#020101;
+    background-color: #6C63FF;
+    border-radius: 14px;
+}
+@media (max-width : 1200px) {
+    .main-bar {
+        padding: 0 2%;
+    }
+
+    .main-bar nav li a{
+        padding: 15px 20px;
+    }
+    
+}
+.checkbtn {
+    float: right;
+    width: 20px;
+    height: 18px;
+    position: relative;
+    transform: rotate(0);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    top: 25px;
+    display: none;
+}
+.checkbtn span {
+    background-color: #fff;
+    display:block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0);
+    transition: 0.25s ease-in-out;
+}
+.checkbtn span:nth-child(1){
+    top:0;
+}
+.checkbtn span:nth-child(2){
+    top:7px;
+}
+.checkbtn span:nth-child(3){
+    top:14px;
+}
+
+@media (max-width : 1000px) {
+    .main-bar{
+        padding: 0 10%;
+
+    }
+    .checkbtn{
+        display: block;
+        margin-right: 40px;
+    }
+    .main-bar nav ul {
+        position: fixed;
+        width: 350px;
+        height: 100vh;
+        background-color: #22272b;
+        top: 68px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        
+    }
+    .main-bar nav ul  li {
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #check:checked ~ ul {
+        left:0;
+    }
+}
+@media (max-width : 670px) {
+    .main-bar nav ul{
+        display: block;
+        width: 100%;
+    }
+}
